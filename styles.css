@@ -1,0 +1,211 @@
+body{
+    font-family: 'Poppins', sans-serif;
+  margin: auto;
+}
+.navbar {
+    animation: arkaplananimasyon 15s reverse;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;  
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    position: fixed;
+}
+#update{
+ display: flex;
+ justify-content: center;
+ justify-items: center;
+
+align-items: center;
+
+}
+.nav-list li {
+    font-size: 18px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+.nav-list a:hover {
+    color:#00a1e1;
+}
+.container{
+    display: flex;
+    height: 100vh;
+    color: white;
+    position:static;
+    background-image: radial-gradient( #485460 0%, #1e272e 50%, #000 100%);
+    animation: arkaplananimasyon 15s reverse;
+}   
+@keyframes arkaplananimasyon {
+    0%{
+        background-image: radial-gradient( #485460 0%, #1e272e 45%, #000 100%);
+    }
+    100%{
+        background-image: radial-gradient( #485460 0%, #1e272e 45%, #000 90%);
+    }
+}
+
+.homepage{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+gap:12%;
+
+}
+.homepage img{
+    height: auto;
+    width: auto;
+    filter:saturate(70%);
+    filter:brightness(0.5);
+    transition: box-shadow 1s;
+    border-radius: 20%;
+    
+}
+
+.info{
+    flex-basis: content;
+    display: flex;
+    padding-left: 100px;
+    animation: animasyon 6s ease-in-out ;
+    color:white;
+    
+    
+}
+.homepage img:hover{
+    box-shadow: 0 0 10px white;
+    box-shadow: 0 0 20px white;
+    box-shadow: 0 0 70px white;
+    box-shadow: 0 0 120px white;
+    border-radius: 20%;
+
+}
+@keyframes animasyon {     
+    0% {
+        opacity: 0;
+        padding-left: 0;
+      
+     
+    }
+    100% {
+        opacity: 1;
+        padding-left: 100px;
+        
+    }    
+}
+
+.yetenekler {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    font-weight: 900;
+
+}
+
+.yetenek>h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.yetenek {
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    background-color: #e0e0e0;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: violet;
+    animation: animasyon1 4s ease-in-out;
+}
+
+@keyframes animasyon1 {
+    0% {
+        width: 0;
+    }
+}
+footer {
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#iletisim a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+    margin: 0 20px;
+}
+
+#iletisim a:hover {
+    color: red;
+}
+
+#mail {
+    margin-top: 20px;
+}
+
+h4 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px; 
+    margin: 0 auto; 
+}
+
+.mail {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+::-webkit-scrollbar {  /* Scrollbar turn off*/
+    width: 0;
+    height: 0;
+}
